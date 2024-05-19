@@ -3,83 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects - John Doe</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f0f2f5;
             color: #333;
         }
-        nav {
-            background-color:#0b3536;
-            padding: 10px;
+        .navbar {
+            background: linear-gradient(90deg, #333, #555);
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
             text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
             padding: 14px 20px;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            margin: 0 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-
-        nav a:hover {
-            background-color: #e4ebe7;
-            color: #0b0c0c;
-            border-radius: 15px;
+        .navbar a:hover {
+            background-color: #444;
+            color: #fff;
         }
-        h2 {
-            color: #0b3536;
-            border-bottom: 2px solid #efedf3;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #731abc, #16a085);
+            color: white;
         }
-        h3 {
-            color: #333;
-            margin-top: 20px;
-            margin-bottom: 10px;
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
+        .content {
+            padding: 40px 20px;
+        }
+        .content h2 {
+            text-align: center;
+            color: #16a085;
+            margin-bottom: 30px;
+        }
+        .projects {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
         }
         .project {
-            background-color: #ecf2f7;
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #1a40bc;
+        }
+        .project p {
+            line-height: 1.8;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: #333;
+            color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            .header {
+                padding: 40px 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="About.html" target="_blank">About</a>
-        <a href="Project.html" target="_blank">Projects</a>
-        <a href="Contact.html" target="_blank">Contact</a>
-    </nav>
-    <div class="project">
-        <h2>Projects</h2>
-        <div>
-            <h3>1st Project</h3>
-            <p>My first project was Automatic safe lock. This project is assigned by our DLD (Digital Logic Design) Teacher.</p>
-        </div>
-        <div>
-            <h3>2nd Project</h3>
-            <p>My second project was a calculator.</p>
-        </div>
-        <div>
-            <h3>3rd Project</h3>
-            <p>My third project was a person detector.</p>
-        </div>
-        <p>All of these projects I made with my groupmates. And I learned a lot from these projects.</p>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Project.html">Projects</a>
+        <a href="Contact.html">Contact</a>
     </div>
+
+    <div class="header" id="projects">
+        <img src="https://media.istockphoto.com/id/1451587807/vector/user-profile-icon-vector-avatar-or-person-icon-profile-picture-portrait-symbol-vector.jpg?s=612x612&w=0&k=20&c=yDJ4ITX1cHMh25Lt1vI1zBn2cAKKAlByHBvPJ8gEiIg=" alt="Profile Image">
+        <h1>Projects</h1>
+        <p>Explore some of the projects I have worked on</p>
+    </div>
+
+    <div class="content">
+        <div class="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project">
+                <h3>Project One</h3>
+                
+                
+                <p>My first project was Automatic safe lock. This project is assigned by our DLD (Digital Logic Design) Teacher.</p>
+            </div>
+            
+            <div class="project">
+                <h3>Project Two</h3>
+              
+                
+                <p>My second project was a calculator. That i made in my object oriented course.</p>
+            </div>
+            
+            <div class="project">
+                <h3>Project Three</h3>
+                
+                
+                <p>My third project was a person detector.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <p>&copy; Made bt Kashaf | 2021-ag-7803
+    </div>
+
 </body>
 </html>

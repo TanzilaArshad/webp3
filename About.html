@@ -3,96 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About - John Doe</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f0f2f5;
             color: #333;
         }
-        nav {
-            background-color: #0b3536;
-            padding: 10px;
+        .navbar {
+            background: linear-gradient(90deg, #333, #555);
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
             text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
             padding: 14px 20px;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            margin: 0 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-
-        nav a:hover {
-            background-color: #e4e7eb;
-            color: #0b0c0c;
-            border-radius: 15px;
+        .navbar a:hover {
+            background-color: #444;
+            color: #fff;
         }
-        h2 {
-            color: #0b3536;
-            border-bottom: 2px solid #0b3536;
-            padding-bottom: 10px;
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #731abc, #16a085);
+            color: white;
         }
-        h3 {
-            color: #0b3536;
-            margin-top: 20px;
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
-        p {
-            line-height: 1.6;
+        .content {
+            padding: 40px 20px;
         }
-        ul {
-            list-style-type: disc;
-            margin: 10px 0 20px 20px;
+        .content h2 {
+            text-align: center;
+            color: #1646a0;
+            margin-bottom: 30px;
+        }
+        .skills {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+        .skills ul {
+            list-style-type: none;
             padding: 0;
         }
-        li {
-            margin: 5px 0;
+        .skills ul li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
         }
-        .additional-skills {
-            margin-top: 20px;
+        .skills ul li:last-child {
+            border-bottom: none;
         }
-        .additional-skills li {
-            list-style-type: square;
+        .skills p {
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            .header {
+                padding: 40px 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="About.html" target="_blank">About</a>
-        <a href="Project.html" target="_blank">Projects</a>
-        <a href="Contact.html" target="_blank">Contact</a>
-    </nav>
-    <h2>Skills</h2>
-    <p> In this information age computer skills have paramount importance.I have some skills that i learned during 2 years of my BSCS study.</p>
-    <p>Folowing are these skills</p>
-    <h3>Basic Computer Skills</h3>
-    <ul>
-        <li>Typing</li>
-        <li>Operating System Navigation</li>
-        <li>Internet Browsing</li>
-        <li>Presentation tools</li>
-        <li>Excel</li>
-        <li>Email managment</li>
-        <li>Word processing</li>
-        <li>File managment</li>
 
-    </ul>
-    <h3>Web</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
-    <h3>Software skills</h3>
-   <ul>
-    <li>C#</li>
-    <li>C++</li>
-   </ul> 
-   
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Project.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <div class="header" id="about">
+        <img src="https://media.istockphoto.com/id/1451587807/vector/user-profile-icon-vector-avatar-or-person-icon-profile-picture-portrait-symbol-vector.jpg?s=612x612&w=0&k=20&c=yDJ4ITX1cHMh25Lt1vI1zBn2cAKKAlByHBvPJ8gEiIg=" alt="Profile Picture" alt="Profile Image">
+        <h1>About Me</h1>
+        <p>Learn more about my skills and experiences</p>
+    </div>
+
+    <div class="content">
+        <div class="skills">
+            <h2>Skills</h2>
+            <p>Here are some of the technical skills I have acquired:</p>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Responsive Web Design</li>
+                <li>Front-End Frameworks: React, Angular</li>
+                <li>Basic Typing skills</li>
+                <li>Word Processing</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>UI/UX Design Principles</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <p>&copy; Made by Kashaf | 2021-ag-7803</p>
+    </div>
 
 </body>
 </html>
